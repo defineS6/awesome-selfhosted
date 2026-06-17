@@ -1,129 +1,132 @@
-# Awesome-Selfhosted
+# Awesome-Selfhosted（中文）
+
+> 本文档是 `README.md` 的简体中文翻译，项目名称、软件名称、链接、许可证标识和部分专有技术术语保持原文，以便与上游列表对照。
 
 [![Awesome](_static/awesome.png)](https://github.com/sindresorhus/awesome) [![](https://github.com/awesome-selfhosted/awesome-selfhosted-data/actions/workflows/check-dead-links.yml/badge.svg)](https://github.com/awesome-selfhosted/awesome-selfhosted-data/issues/1) [![](https://github.com/awesome-selfhosted/awesome-selfhosted-data/actions/workflows/check-unmaintained-projects.yml/badge.svg)](https://github.com/awesome-selfhosted/awesome-selfhosted-data/issues/1) [![](https://img.shields.io/liberapay/goal/awesome-selfhosted?logo=liberapay)](https://liberapay.com/awesome-selfhosted/)
 
-Self-hosting is the practice of hosting and managing applications on your own server(s) instead of consuming from [SaaSS](https://www.gnu.org/philosophy/who-does-that-server-really-serve.html) providers.
+自托管是指在你自己的服务器上托管和管理应用程序，而不是使用 [SaaSS](https://www.gnu.org/philosophy/who-does-that-server-really-serve.html) 提供商的服务。
 
-This is a list of [Free](https://en.wikipedia.org/wiki/Free_software) Software [network services](https://en.wikipedia.org/wiki/Network_service) and [web applications](https://en.wikipedia.org/wiki/Web_application) which can be hosted on your own server(s). Non-Free software is listed on the [Non-Free](https://github.com/awesome-selfhosted/awesome-selfhosted/blob/master/non-free.md) page.
+这是一个可托管在你自己服务器上的[自由](https://en.wikipedia.org/wiki/Free_software)软件[网络服务](https://en.wikipedia.org/wiki/Network_service)和 [Web 应用程序](https://en.wikipedia.org/wiki/Web_application)列表。非自由软件列在 [Non-Free](https://github.com/awesome-selfhosted/awesome-selfhosted/blob/master/non-free.md) 页面中。
 
-**[HTML version](https://awesome-selfhosted.net/) (recommended)**, [Markdown version](https://github.com/awesome-selfhosted/awesome-selfhosted) (legacy).
+**[HTML 版本](https://awesome-selfhosted.net/)（推荐）**，[Markdown 版本](https://github.com/awesome-selfhosted/awesome-selfhosted)（旧版）。
 
-See [Contributing](#contributing).
-
-Translations: [简体中文](README.zh-CN.md).
+请参阅[贡献指南](#contributing)。
 
 --------------------
 
-## Table of contents
+<a id="table-of-contents"></a>
+## 目录
 
-- [Software](#software)
-  - [Analytics](#analytics)
-  - [Archiving and Digital Preservation (DP)](#archiving-and-digital-preservation-dp)
-  - [Automation](#automation)
-  - [Backup](#backup)
-  - [Blogging Platforms](#blogging-platforms)
-  - [Booking and Scheduling](#booking-and-scheduling)
-  - [Bookmarks and Link Sharing](#bookmarks-and-link-sharing)
-  - [Calendar & Contacts](#calendar--contacts)
-  - [Communication - Custom Communication Systems](#communication---custom-communication-systems)
-  - [Communication - Email - Complete Solutions](#communication---email---complete-solutions)
-  - [Communication - Email - Mail Delivery Agents](#communication---email---mail-delivery-agents)
-  - [Communication - Email - Mail Transfer Agents](#communication---email---mail-transfer-agents)
-  - [Communication - Email - Mailing Lists and Newsletters](#communication---email---mailing-lists-and-newsletters)
-  - [Communication - Email - Webmail Clients](#communication---email---webmail-clients)
-  - [Communication - IRC](#communication---irc)
-  - [Communication - SIP](#communication---sip)
-  - [Communication - Social Networks and Forums](#communication---social-networks-and-forums)
-  - [Communication - Video Conferencing](#communication---video-conferencing)
-  - [Communication - XMPP - Servers](#communication---xmpp---servers)
-  - [Communication - XMPP - Web Clients](#communication---xmpp---web-clients)
-  - [Community-Supported Agriculture (CSA)](#community-supported-agriculture-csa)
-  - [Conference Management](#conference-management)
-  - [Content Management Systems (CMS)](#content-management-systems-cms)
-  - [Customer Relationship Management (CRM)](#customer-relationship-management-crm)
-  - [Database Management](#database-management)
+- [软件](#software)
+  - [分析](#analytics)
+  - [归档与数字保存（DP）](#archiving-and-digital-preservation-dp)
+  - [自动化](#automation)
+  - [备份](#backup)
+  - [博客平台](#blogging-platforms)
+  - [预订与排程](#booking-and-scheduling)
+  - [书签与链接分享](#bookmarks-and-link-sharing)
+  - [日历与联系人](#calendar--contacts)
+  - [通信 - 自定义通信系统](#communication---custom-communication-systems)
+  - [通信 - 电子邮件 - 完整解决方案](#communication---email---complete-solutions)
+  - [通信 - 电子邮件 - 邮件投递代理](#communication---email---mail-delivery-agents)
+  - [通信 - 电子邮件 - 邮件传输代理](#communication---email---mail-transfer-agents)
+  - [通信 - 电子邮件 - 邮件列表与新闻通讯](#communication---email---mailing-lists-and-newsletters)
+  - [通信 - 电子邮件 - Webmail 客户端](#communication---email---webmail-clients)
+  - [通信 - IRC](#communication---irc)
+  - [通信 - SIP](#communication---sip)
+  - [通信 - 社交网络与论坛](#communication---social-networks-and-forums)
+  - [通信 - 视频会议](#communication---video-conferencing)
+  - [通信 - XMPP - 服务器](#communication---xmpp---servers)
+  - [通信 - XMPP - Web 客户端](#communication---xmpp---web-clients)
+  - [社区支持农业（CSA）](#community-supported-agriculture-csa)
+  - [会议管理](#conference-management)
+  - [内容管理系统（CMS）](#content-management-systems-cms)
+  - [客户关系管理（CRM）](#customer-relationship-management-crm)
+  - [数据库管理](#database-management)
   - [DNS](#dns)
-  - [Document Management](#document-management)
-  - [Document Management - E-books](#document-management---e-books)
-  - [Document Management - Institutional Repository and Digital Library Software](#document-management---institutional-repository-and-digital-library-software)
-  - [Document Management - Integrated Library Systems (ILS)](#document-management---integrated-library-systems-ils)
-  - [E-commerce](#e-commerce)
-  - [Federated Identity & Authentication](#federated-identity--authentication)
-  - [Feed Readers](#feed-readers)
-  - [File Transfer & Synchronization](#file-transfer--synchronization)
-  - [File Transfer - Distributed Filesystems](#file-transfer---distributed-filesystems)
-  - [File Transfer - Object Storage & File Servers](#file-transfer---object-storage--file-servers)
-  - [File Transfer - Peer-to-peer Filesharing](#file-transfer---peer-to-peer-filesharing)
-  - [File Transfer - Single-click & Drag-n-drop Upload](#file-transfer---single-click--drag-n-drop-upload)
-  - [File Transfer - Web-based File Managers](#file-transfer---web-based-file-managers)
-  - [Games](#games)
-  - [Games - Administrative Utilities & Control Panels](#games---administrative-utilities--control-panels)
-  - [Genealogy](#genealogy)
-  - [Generative Artificial Intelligence (GenAI)](#generative-artificial-intelligence-genai)
-  - [Groupware](#groupware)
-  - [Health and Fitness](#health-and-fitness)
-  - [Human Resources Management (HRM)](#human-resources-management-hrm)
-  - [Identity Management](#identity-management)
-  - [Internet of Things (IoT)](#internet-of-things-iot)
-  - [Inventory Management](#inventory-management)
-  - [Knowledge Management Tools](#knowledge-management-tools)
-  - [Learning and Courses](#learning-and-courses)
-  - [Manufacturing](#manufacturing)
-  - [Maps and Global Positioning System (GPS)](#maps-and-global-positioning-system-gps)
-  - [Media Management](#media-management)
-  - [Media Streaming](#media-streaming)
-  - [Media Streaming - Audio Streaming](#media-streaming---audio-streaming)
-  - [Media Streaming - Multimedia Streaming](#media-streaming---multimedia-streaming)
-  - [Media Streaming - Video Streaming](#media-streaming---video-streaming)
-  - [Miscellaneous](#miscellaneous)
-  - [Money, Budgeting & Management](#money-budgeting--management)
-  - [Monitoring & Status Pages](#monitoring--status-pages)
-  - [Network Utilities](#network-utilities)
-  - [Note-taking & Editors](#note-taking--editors)
-  - [Office Suites](#office-suites)
-  - [Password Managers](#password-managers)
-  - [Pastebins](#pastebins)
-  - [Personal Dashboards](#personal-dashboards)
-  - [Photo Galleries](#photo-galleries)
-  - [Polls and Events](#polls-and-events)
-  - [Proxy](#proxy)
-  - [Recipe Management](#recipe-management)
-  - [Remote Access](#remote-access)
-  - [Resource Planning](#resource-planning)
-  - [Search Engines](#search-engines)
-  - [Self-hosting Solutions](#self-hosting-solutions)
-  - [Software Development](#software-development)
-  - [Software Development - API Management](#software-development---api-management)
-  - [Software Development - Continuous Integration & Deployment](#software-development---continuous-integration--deployment)
-  - [Software Development - FaaS & Serverless](#software-development---faas--serverless)
-  - [Software Development - Feature Toggle](#software-development---feature-toggle)
-  - [Software Development - IDE & Tools](#software-development---ide--tools)
-  - [Software Development - Localization](#software-development---localization)
-  - [Software Development - Low Code](#software-development---low-code)
-  - [Software Development - Project Management](#software-development---project-management)
-  - [Software Development - Testing](#software-development---testing)
-  - [Static Site Generators](#static-site-generators)
-  - [Task Management & To-do Lists](#task-management--to-do-lists)
-  - [Ticketing](#ticketing)
-  - [Time Tracking](#time-tracking)
-  - [URL Shorteners](#url-shorteners)
-  - [Video Surveillance](#video-surveillance)
+  - [文档管理](#document-management)
+  - [文档管理 - 电子书](#document-management---e-books)
+  - [文档管理 - 机构知识库与数字图书馆软件](#document-management---institutional-repository-and-digital-library-software)
+  - [文档管理 - 集成图书馆系统（ILS）](#document-management---integrated-library-systems-ils)
+  - [电子商务](#e-commerce)
+  - [联合身份与认证](#federated-identity--authentication)
+  - [订阅阅读器](#feed-readers)
+  - [文件传输与同步](#file-transfer--synchronization)
+  - [文件传输 - 分布式文件系统](#file-transfer---distributed-filesystems)
+  - [文件传输 - 对象存储与文件服务器](#file-transfer---object-storage--file-servers)
+  - [文件传输 - 点对点文件共享](#file-transfer---peer-to-peer-filesharing)
+  - [文件传输 - 单击与拖放上传](#file-transfer---single-click--drag-n-drop-upload)
+  - [文件传输 - 基于 Web 的文件管理器](#file-transfer---web-based-file-managers)
+  - [游戏](#games)
+  - [游戏 - 管理工具与控制面板](#games---administrative-utilities--control-panels)
+  - [家谱](#genealogy)
+  - [生成式人工智能（GenAI）](#generative-artificial-intelligence-genai)
+  - [群件](#groupware)
+  - [健康与健身](#health-and-fitness)
+  - [人力资源管理（HRM）](#human-resources-management-hrm)
+  - [身份管理](#identity-management)
+  - [物联网（IoT）](#internet-of-things-iot)
+  - [库存管理](#inventory-management)
+  - [知识管理工具](#knowledge-management-tools)
+  - [学习与课程](#learning-and-courses)
+  - [制造](#manufacturing)
+  - [地图与全球定位系统（GPS）](#maps-and-global-positioning-system-gps)
+  - [媒体管理](#media-management)
+  - [媒体流](#media-streaming)
+  - [媒体流 - 音频流](#media-streaming---audio-streaming)
+  - [媒体流 - 多媒体流](#media-streaming---multimedia-streaming)
+  - [媒体流 - 视频流](#media-streaming---video-streaming)
+  - [杂项](#miscellaneous)
+  - [金钱、预算与管理](#money-budgeting--management)
+  - [监控与状态页](#monitoring--status-pages)
+  - [网络工具](#network-utilities)
+  - [笔记与编辑器](#note-taking--editors)
+  - [办公套件](#office-suites)
+  - [密码管理器](#password-managers)
+  - [粘贴板](#pastebins)
+  - [个人仪表盘](#personal-dashboards)
+  - [相册](#photo-galleries)
+  - [投票与活动](#polls-and-events)
+  - [代理](#proxy)
+  - [食谱管理](#recipe-management)
+  - [远程访问](#remote-access)
+  - [资源规划](#resource-planning)
+  - [搜索引擎](#search-engines)
+  - [自托管解决方案](#self-hosting-solutions)
+  - [软件开发](#software-development)
+  - [软件开发 - API 管理](#software-development---api-management)
+  - [软件开发 - 持续集成与部署](#software-development---continuous-integration--deployment)
+  - [软件开发 - FaaS 与 Serverless](#software-development---faas--serverless)
+  - [软件开发 - 功能开关](#software-development---feature-toggle)
+  - [软件开发 - IDE 与工具](#software-development---ide--tools)
+  - [软件开发 - 本地化](#software-development---localization)
+  - [软件开发 - 低代码](#software-development---low-code)
+  - [软件开发 - 项目管理](#software-development---project-management)
+  - [软件开发 - 测试](#software-development---testing)
+  - [静态站点生成器](#static-site-generators)
+  - [任务管理与待办列表](#task-management--to-do-lists)
+  - [工单](#ticketing)
+  - [时间跟踪](#time-tracking)
+  - [URL 缩短器](#url-shorteners)
+  - [视频监控](#video-surveillance)
   - [VPN](#vpn)
-  - [Web Servers](#web-servers)
-  - [Wikis](#wikis)
-- [List of Licenses](#list-of-licenses)
-- [Anti-features](#anti-features)
-- [External Links](#external-links)
-- [Contributing](#contributing)
-- [License](#license)
+  - [Web 服务器](#web-servers)
+  - [Wiki](#wikis)
+- [许可证列表](#list-of-licenses)
+- [反功能](#anti-features)
+- [外部链接](#external-links)
+- [贡献](#contributing)
+- [许可](#license)
 
 --------------------
 
-## Software
+<a id="software"></a>
+## 软件
 
-### Analytics
+<a id="analytics"></a>
+### 分析
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Analytics](https://en.wikipedia.org/wiki/Analytics) is the systematic computational analysis of data or statistics. It is used for the discovery, interpretation, and communication of meaningful patterns in data.
 
@@ -163,9 +166,10 @@ _Related: [Database Management](#database-management), [Personal Dashboards](#pe
 - [Vince](https://www.vinceanalytics.com/) - Web analytics and dashboard (alternative to Google Analytics). ([Source Code](https://github.com/vinceanalytics/vince)) `AGPL-3.0` `Go/Docker/K8S/deb`
 
 
-### Archiving and Digital Preservation (DP)
+<a id="archiving-and-digital-preservation-dp"></a>
+### 归档与数字保存（DP）
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Digital [archiving](https://en.wikipedia.org/wiki/Archival_science) and [preservation](https://en.wikipedia.org/wiki/Digital_preservation) software.
 
@@ -189,9 +193,10 @@ _See also: [awesome-web-archiving](https://github.com/iipc/awesome-web-archiving
 - [Wayback](https://github.com/wabarc/wayback) - A self-hosted toolkit for archiving webpages to the Internet Archive, archive.today, IPFS, and local file systems. `GPL-3.0` `Go`
 
 
-### Automation
+<a id="automation"></a>
+### 自动化
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Automation](https://en.wikipedia.org/wiki/Automation) software designed to reduce human intervention in processes.
 
@@ -228,9 +233,10 @@ _Related: [Internet of Things (IoT)](#internet-of-things-iot), [Software Develop
 - [µTask](https://github.com/ovh/utask) - Automation engine that models and executes business processes declared in yaml. `BSD-3-Clause` `Go/Docker`
 
 
-### Backup
+<a id="backup"></a>
+### 备份
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Backup](https://en.wikipedia.org/wiki/Backup) software.
 
@@ -240,9 +246,10 @@ _Related: [Archiving and Digital Preservation (DP)](#archiving-and-digital-prese
 
 
 
-### Blogging Platforms
+<a id="blogging-platforms"></a>
+### 博客平台
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 A [blog](https://en.wikipedia.org/wiki/Blog) is a discussion or informational website consisting of discrete, diary-style text entries (posts).
 
@@ -267,9 +274,10 @@ _See also: [WeblogMatrix](https://www.weblogmatrix.org/)_
 - [WriteFreely](https://writefreely.org) - Writing software for starting a minimalist, federated blog — or an entire community. ([Source Code](https://github.com/writefreely/writefreely)) `AGPL-3.0` `Go`
 
 
-### Booking and Scheduling
+<a id="booking-and-scheduling"></a>
+### 预订与排程
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Event scheduling, reservation, and appointment management software.
 
@@ -285,9 +293,10 @@ _Related: [Polls and Events](#polls-and-events), [Groupware](#groupware)_
 - [Seatsurfing](https://seatsurfing.app/) - Webbased app to book seats, desks and rooms for offices. ([Source Code](https://github.com/seatsurfing/seatsurfing)) `GPL-3.0` `Docker`
 
 
-### Bookmarks and Link Sharing
+<a id="bookmarks-and-link-sharing"></a>
+### 书签与链接分享
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Software which allows users to add, annotate, edit, and share [bookmarks](https://en.wikipedia.org/wiki/Bookmark_(digital)) of web documents.
 
@@ -310,9 +319,10 @@ Software which allows users to add, annotate, edit, and share [bookmarks](https:
 - [SyncMarks](https://codeberg.org/Offerel/SyncMarks-Webapp) - Sync and manage your browser bookmarks from Edge, Firefox and Chromium. ([Clients](https://codeberg.org/Offerel/SyncMarks-Extension)) `AGPL-3.0` `PHP`
 
 
-### Calendar & Contacts
+<a id="calendar--contacts"></a>
+### 日历与联系人
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [CalDAV](https://en.wikipedia.org/wiki/CalDAV) and [CardDAV](https://en.wikipedia.org/wiki/CardDAV) protocol servers and web clients/interfaces for [Electronic calendar](https://en.wikipedia.org/wiki/Calendaring_software), [address book](https://en.wikipedia.org/wiki/Address_book) and [contact management](https://en.wikipedia.org/wiki/Contact_manager).
 
@@ -328,9 +338,10 @@ _Related: [Groupware](#groupware)_
 - [Xandikos](https://github.com/jelmer/xandikos) - Open source CardDAV and CalDAV server with minimal administrative overhead, backed by a Git repository. `GPL-3.0` `Python/deb`
 
 
-### Communication - Custom Communication Systems
+<a id="communication---custom-communication-systems"></a>
+### 通信 - 自定义通信系统
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Communication software](https://en.wikipedia.org/wiki/Communication_software) used to provide remote access to systems and exchange files and messages in text, audio and/or video formats between different computers or users, using their own custom protocols.
 
@@ -373,9 +384,10 @@ _Related: [Groupware](#groupware)_
 - [Zulip](https://zulip.org) - Zulip is a powerful, open source group chat application. ([Source Code](https://github.com/zulip/zulip)) `Apache-2.0` `Python`
 
 
-### Communication - Email - Complete Solutions
+<a id="communication---email---complete-solutions"></a>
+### 通信 - 电子邮件 - 完整解决方案
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Simple deployment of [E-mail](https://en.wikipedia.org/wiki/Email) servers, e.g. for inexperienced or impatient admins.
 
@@ -399,9 +411,10 @@ Simple deployment of [E-mail](https://en.wikipedia.org/wiki/Email) servers, e.g.
 - [wildduck](https://wildduck.email/) - Scalable no-SPOF IMAP/POP3 mail server. ([Source Code](https://github.com/zone-eu/wildduck)) `EUPL-1.2` `Nodejs/Docker`
 
 
-### Communication - Email - Mail Delivery Agents
+<a id="communication---email---mail-delivery-agents"></a>
+### 通信 - 电子邮件 - 邮件投递代理
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Mail Delivery Agents](https://en.wikipedia.org/wiki/Message_delivery_agent) (MDAs) - [IMAP](https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol)/[POP3](https://en.wikipedia.org/wiki/Post_Office_Protocol) server software.
 
@@ -410,9 +423,10 @@ Simple deployment of [E-mail](https://en.wikipedia.org/wiki/Email) servers, e.g.
 - [Dovecot](https://www.dovecot.org/) - IMAP and POP3 server written primarily with security in mind. ([Source Code](https://github.com/dovecot/core)) `MIT/LGPL-2.1` `C/deb`
 
 
-### Communication - Email - Mail Transfer Agents
+<a id="communication---email---mail-transfer-agents"></a>
+### 通信 - 电子邮件 - 邮件传输代理
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Mail Transfer Agents](https://en.wikipedia.org/wiki/Message_transfer_agent) (MTAs) - [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) servers.
 
@@ -428,9 +442,10 @@ Simple deployment of [E-mail](https://en.wikipedia.org/wiki/Email) servers, e.g.
 - [Sendmail](https://www.proofpoint.com/us/products/email-protection/open-source-email-solution) - Message transfer agent (MTA). `Sendmail` `C/deb`
 
 
-### Communication - Email - Mailing Lists and Newsletters
+<a id="communication---email---mailing-lists-and-newsletters"></a>
+### 通信 - 电子邮件 - 邮件列表与新闻通讯
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Mailing list](https://en.wikipedia.org/wiki/Mailing_list) servers and mass mailing software - one message to many recipients.
 
@@ -446,9 +461,10 @@ Simple deployment of [E-mail](https://en.wikipedia.org/wiki/Email) servers, e.g.
 - [Sympa](https://www.sympa.community/) - Mailing list manager. ([Source Code](https://github.com/sympa-community/sympa)) `GPL-2.0` `Perl`
 
 
-### Communication - Email - Webmail Clients
+<a id="communication---email---webmail-clients"></a>
+### 通信 - 电子邮件 - Webmail 客户端
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Webmail](https://en.wikipedia.org/wiki/Webmail) clients.
 
@@ -458,9 +474,10 @@ Simple deployment of [E-mail](https://en.wikipedia.org/wiki/Email) servers, e.g.
 - [SquirrelMail](https://squirrelmail.org) - Another browser-based IMAP client. ([Source Code](https://sourceforge.net/p/squirrelmail/code/HEAD/tree/)) `GPL-2.0` `PHP`
 
 
-### Communication - IRC
+<a id="communication---irc"></a>
+### 通信 - IRC
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat) communication software.
 
@@ -477,9 +494,10 @@ Simple deployment of [E-mail](https://en.wikipedia.org/wiki/Email) servers, e.g.
 - [ZNC](https://wiki.znc.in/ZNC) - Advanced IRC bouncer. ([Source Code](https://github.com/znc/znc)) `Apache-2.0` `C++/deb`
 
 
-### Communication - SIP
+<a id="communication---sip"></a>
+### 通信 - SIP
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [SIP](https://en.wikipedia.org/wiki/Session_Initiation_Protocol)/[IPBX](https://en.wikipedia.org/wiki/IP_PBX) telephony software.
 
@@ -497,9 +515,10 @@ Simple deployment of [E-mail](https://en.wikipedia.org/wiki/Email) servers, e.g.
 - [Yeti-Switch](https://yeti-switch.org/) - Transit class4 softswitch(SBC) with integrated billing and routing engine and REST API. ([Demo](https://demo.yeti-switch.org/), [Source Code](https://github.com/yeti-switch)) `GPL-2.0` `C++/Ruby`
 
 
-### Communication - Social Networks and Forums
+<a id="communication---social-networks-and-forums"></a>
+### 通信 - 社交网络与论坛
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Social Networking](https://en.wikipedia.org/wiki/Social_networking_service) and [Forum](https://en.wikipedia.org/wiki/Internet_forum) software.
 
@@ -545,9 +564,10 @@ Simple deployment of [E-mail](https://en.wikipedia.org/wiki/Email) servers, e.g.
 - [yarn.social](https://yarn.social) - Self-Hosted, Twitter™-like Decentralised micro-logging platform. No ads, no tracking, your content, your data. ([Source Code](https://git.mills.io/yarnsocial/yarn)) `MIT` `Go`
 
 
-### Communication - Video Conferencing
+<a id="communication---video-conferencing"></a>
+### 通信 - 视频会议
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Video/Web Conferencing](https://en.wikipedia.org/wiki/Web_conferencing) tools and software.
 
@@ -564,9 +584,10 @@ _Related: [Conference Management](#conference-management)_
 - [plugNmeet](https://www.plugnmeet.org/) - Scalable and high performance web conferencing system. ([Demo](https://demo.plugnmeet.com/login.html), [Source Code](https://github.com/mynaparrot/plugNmeet-server)) `MIT` `Docker/Go`
 
 
-### Communication - XMPP - Servers
+<a id="communication---xmpp---servers"></a>
+### 通信 - XMPP - 服务器
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Extensible Messaging and Presence Protocol](https://en.wikipedia.org/wiki/XMPP) servers.
 
@@ -578,9 +599,10 @@ _Related: [Conference Management](#conference-management)_
 - [Tigase](https://tigase.net/xmpp-server) - XMPP server implementation in Java. ([Source Code](https://github.com/tigase/tigase-server)) `GPL-3.0` `Java`
 
 
-### Communication - XMPP - Web Clients
+<a id="communication---xmpp---web-clients"></a>
+### 通信 - XMPP - Web 客户端
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Extensible Messaging and Presence Protocol](https://en.wikipedia.org/wiki/XMPP) Web clients/interfaces.
 
@@ -589,9 +611,10 @@ _Related: [Conference Management](#conference-management)_
 - [Salut à Toi](https://www.salut-a-toi.org/) - Multipurpose, multi frontend, libre and decentralized communication tool. ([Source Code](https://repos.goffi.org/libervia-backend)) `AGPL-3.0` `Python`
 
 
-### Community-Supported Agriculture (CSA)
+<a id="community-supported-agriculture-csa"></a>
+### 社区支持农业（CSA）
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Management and administration tools for community supported agriculture and food cooperatives.
 
@@ -608,9 +631,10 @@ _Related: [E-commerce](#e-commerce)_
 - [teikei](https://github.com/teikei/teikei) - A web application that maps out community-supported agriculture based on crowdsourced data. ([Demo](https://ernte-teilen.org/karte/#/)) `AGPL-3.0` `Nodejs`
 
 
-### Conference Management
+<a id="conference-management"></a>
+### 会议管理
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Software for submission of [abstracts](https://en.wikipedia.org/wiki/Abstract_management) and preparation/management of academic conferences.
 
@@ -621,9 +645,10 @@ Software for submission of [abstracts](https://en.wikipedia.org/wiki/Abstract_ma
 - [pretalx](https://pretalx.org) - Web-based event management, including running a Call for Papers, reviewing submissions, and scheduling talks. Exports and imports for various related tools. ([Source Code](https://github.com/pretalx/pretalx)) `Apache-2.0` `Python`
 
 
-### Content Management Systems (CMS)
+<a id="content-management-systems-cms"></a>
+### 内容管理系统（CMS）
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Content Management Systems](https://en.wikipedia.org/wiki/Content_management_system) offer a practical way to setup a website with many features, using third party plugins, themes and functionality that are easy to add and customize.
 
@@ -671,9 +696,10 @@ _Related: [Blogging Platforms](#blogging-platforms), [Static Site Generators](#s
 - [WordPress](https://wordpress.org/) - World's most-used blogging and CMS engine. ([Source Code](https://github.com/WordPress/WordPress)) `GPL-2.0` `PHP`
 
 
-### Customer Relationship Management (CRM)
+<a id="customer-relationship-management-crm"></a>
+### 客户关系管理（CRM）
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Customer relationship management (CRM)](https://en.wikipedia.org/wiki/Customer_relationship_management) is a strategic process that organizations use to manage, analyze, and improve their interactions with customers.
 
@@ -688,9 +714,10 @@ _Related: [Communication - Email - Mailing Lists and Newsletters](#communication
 - [Twenty](https://twenty.com) - A modern CRM offering the flexibility of open source, advanced features, and a sleek design. ([Source Code](https://github.com/twentyhq/twenty)) `AGPL-3.0` `Docker`
 
 
-### Database Management
+<a id="database-management"></a>
+### 数据库管理
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Web interfaces for [database](https://en.wikipedia.org/wiki/Database) management. Includes tools for database analytics and visualization.
 
@@ -714,9 +741,10 @@ _See also: [dbdb.io - Database of Databases](https://dbdb.io/)_
 - [Mathesar](https://mathesar.org/) - Intuitive UI to manage data collaboratively, for users of all technical skill levels. Built on Postgres – connect an existing DB or set up a new one. ([Source Code](https://github.com/mathesar-foundation/mathesar)) `GPL-3.0` `Docker/Python`
 
 
+<a id="dns"></a>
 ### DNS
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) servers and management tools with advertisement blocking functionality, primarily aimed at home or small networks.
 
@@ -729,9 +757,10 @@ _See also: [awesome-sysadmin/DNS - Servers](https://github.com/awesome-foss/awes
 - [Technitium DNS Server](https://technitium.com/dns/) - Authoritative/recursive DNS server with ad blocking functionality. ([Source Code](https://github.com/TechnitiumSoftware/DnsServer)) `GPL-3.0` `Docker/C#`
 
 
-### Document Management
+<a id="document-management"></a>
+### 文档管理
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 A [document management system](https://en.wikipedia.org/wiki/Document_management_system) (DMS) is a system used to receive, track, manage and store documents and reduce paper.
 
@@ -754,9 +783,10 @@ A [document management system](https://en.wikipedia.org/wiki/Document_management
 - [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) - Local hosted web application that allows you to perform various operations on PDF files, such as merging, splitting, file conversions and OCR. `Apache-2.0` `Docker/Java`
 
 
-### Document Management - E-books
+<a id="document-management---e-books"></a>
+### 文档管理 - 电子书
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Ebook](https://en.wikipedia.org/wiki/Ebook) library management software.
 
@@ -774,9 +804,10 @@ A [document management system](https://en.wikipedia.org/wiki/Document_management
 - [Stump](https://www.stumpapp.dev) - A fast, free and open source comics, manga and digital book server with OPDS support. ([Source Code](https://github.com/stumpapp/stump)) `MIT` `Rust`
 
 
-### Document Management - Institutional Repository and Digital Library Software
+<a id="document-management---institutional-repository-and-digital-library-software"></a>
+### 文档管理 - 机构知识库与数字图书馆软件
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Institutional repository](https://en.wikipedia.org/wiki/Institutional_repository) and [digital library](https://en.wikipedia.org/wiki/Digital_library) management software.
 
@@ -788,9 +819,10 @@ A [document management system](https://en.wikipedia.org/wiki/Document_management
 - [Samvera Hyrax](https://samvera.org/) - Front-end for the Samvera framework, which itself is a Ruby on Rails application for browsing and managing Fedora-based digital repositories. ([Source Code](https://github.com/samvera/hyrax)) `Apache-2.0` `Ruby`
 
 
-### Document Management - Integrated Library Systems (ILS)
+<a id="document-management---integrated-library-systems-ils"></a>
+### 文档管理 - 集成图书馆系统（ILS）
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 An [integrated library system](https://en.wikipedia.org/wiki/Integrated_library_system) is an enterprise resource planning system for a library, used to track items owned, orders made, bills paid, and patrons who have borrowed.
 
@@ -801,9 +833,10 @@ _Related: [Content Management Systems (CMS)](#content-management-systems-cms), [
 - [RERO ILS](https://rero21.ch/) - Large-scale ILS that can be run as a service with consortial features, intended primarily for library networks. Includes most standard modules (circulation, acquisitions, cataloging,...) and a web-based public and professional interface. ([Demo](https://ils.test.rero.ch/), [Source Code](https://github.com/rero/rero-ils)) `AGPL-3.0` `Python/Docker`
 
 
-### E-commerce
+<a id="e-commerce"></a>
+### 电子商务
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [E-commerce](https://en.wikipedia.org/wiki/E-commerce) software.
 
@@ -833,9 +866,10 @@ _Related: [Community-Supported Agriculture (CSA)](#community-supported-agricultu
 - [WooCommerce](https://woocommerce.com/) - WordPress based e-commerce solution. ([Source Code](https://github.com/woocommerce/woocommerce)) `GPL-3.0` `PHP`
 
 
-### Federated Identity & Authentication
+<a id="federated-identity--authentication"></a>
+### 联合身份与认证
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Federated identity](https://en.wikipedia.org/wiki/Federated_identity) and [authentication](https://en.wikipedia.org/wiki/Electronic_authentication) software.
 
@@ -843,9 +877,10 @@ _Related: [Community-Supported Agriculture (CSA)](#community-supported-agricultu
 
 
 
-### Feed Readers
+<a id="feed-readers"></a>
+### 订阅阅读器
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 A [news aggregator](https://en.wikipedia.org/wiki/News_aggregator), also termed a feed aggregator, feed reader, news reader, [RSS](https://en.wikipedia.org/wiki/RSS) reader, is an application that aggregates web content such as newspapers/blogs/vlogs/podcasts in one location for easy viewing.
 
@@ -875,9 +910,10 @@ A [news aggregator](https://en.wikipedia.org/wiki/News_aggregator), also termed 
 - [Yarr](https://github.com/nkanaev/yarr) - Yarr (yet another rss reader) is a web-based feed aggregator which can be used both as a desktop application and a personal self-hosted server. `MIT` `Go`
 
 
-### File Transfer & Synchronization
+<a id="file-transfer--synchronization"></a>
+### 文件传输与同步
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [File transfer](https://en.wikipedia.org/wiki/File_transfer), [sharing](https://en.wikipedia.org/wiki/File_sharing) and [synchronization software](https://en.wikipedia.org/wiki/File_synchronization) software.
 
@@ -901,9 +937,10 @@ _Related: [Groupware](#groupware)_
 - [Unison](https://www.cis.upenn.edu/~bcpierce/unison/) - Unison is a file-synchronization tool for OSX, Unix, and Windows. ([Source Code](https://github.com/bcpierce00/unison)) `GPL-3.0` `deb/OCaml`
 
 
-### File Transfer - Distributed Filesystems
+<a id="file-transfer---distributed-filesystems"></a>
+### 文件传输 - 分布式文件系统
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Network distributed filesystems.
 
@@ -911,9 +948,10 @@ Network distributed filesystems.
 
 
 
-### File Transfer - Object Storage & File Servers
+<a id="file-transfer---object-storage--file-servers"></a>
+### 文件传输 - 对象存储与文件服务器
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Object storage](https://en.wikipedia.org/wiki/Object_storage) is a computer data storage that manages data as objects, as opposed to other storage architectures like file systems which manages data as a file hierarchy, and block storage which manages data as blocks within sectors and tracks.
 
@@ -924,9 +962,10 @@ Network distributed filesystems.
 - [ZOT OCI Registry](https://zotregistry.dev) - A production-ready vendor-neutral OCI-native container image registry. ([Demo](https://zothub.io), [Source Code](https://github.com/project-zot/zot)) `Apache-2.0` `Go/Docker`
 
 
-### File Transfer - Peer-to-peer Filesharing
+<a id="file-transfer---peer-to-peer-filesharing"></a>
+### 文件传输 - 点对点文件共享
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Peer-to-peer file sharing](https://en.wikipedia.org/wiki/Peer-to-peer_file_sharing) is the distribution and [sharing](https://en.wikipedia.org/wiki/File_sharing) of digital media using [peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer) (P2P) networking technology.
 
@@ -940,9 +979,10 @@ Network distributed filesystems.
 - [Webtor](https://github.com/webtor-io/self-hosted) - Web-based torrent client with instant audio/video streaming. ([Demo](https://webtor.io)) `MIT` `Docker`
 
 
-### File Transfer - Single-click & Drag-n-drop Upload
+<a id="file-transfer---single-click--drag-n-drop-upload"></a>
+### 文件传输 - 单击与拖放上传
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Simplified file servers for sharing of one-time/short-lived/temporary files, providing single-click or [drag-and-drop](https://en.wikipedia.org/wiki/Drag_and_drop) upload functionality.
 
@@ -976,9 +1016,10 @@ Simplified file servers for sharing of one-time/short-lived/temporary files, pro
 - [Zipline](https://github.com/diced/zipline) - A lightweight, fast and reliable file sharing server that is commonly used with ShareX, offering a react-based Web UI and fast API. `MIT` `Docker/Nodejs`
 
 
-### File Transfer - Web-based File Managers
+<a id="file-transfer---web-based-file-managers"></a>
+### 文件传输 - 基于 Web 的文件管理器
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Web-based [file managers](https://en.wikipedia.org/wiki/File_manager).
 
@@ -1002,9 +1043,10 @@ _Related: [Groupware](#groupware)_
 - [Tiny File Manager](https://tinyfilemanager.github.io) - Web based File Manager in PHP, simple, fast and small file manager with a single file. ([Demo](https://tinyfilemanager.github.io/demo/), [Source Code](https://github.com/prasathmani/tinyfilemanager)) `GPL-3.0` `PHP`
 
 
-### Games
+<a id="games"></a>
+### 游戏
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Multiplayer game servers and [browser games](https://en.wikipedia.org/wiki/Browser_game).
 
@@ -1031,9 +1073,10 @@ _Related: [Games - Administrative Utilities & Control Panels](#games---administr
 - [Zero-K](https://zero-k.info/) - Open Source on Springrts engine. Zero-K is a traditional real time strategy game with a focus on player creativity through terrain manipulation, physics, and a large roster of unique units - all while being balanced to support competitive play. ([Source Code](https://github.com/ZeroK-RTS/Zero-K)) `GPL-2.0` `Lua`
 
 
-### Games - Administrative Utilities & Control Panels
+<a id="games---administrative-utilities--control-panels"></a>
+### 游戏 - 管理工具与控制面板
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Utilities for managing game servers and game libraries.
 
@@ -1060,22 +1103,24 @@ _Related: [Games](#games)_
 - [Sunshine](https://app.lizardbyte.dev/Sunshine/) - Remote game stream host for Moonlight with support up to 120 frames per second and 4K resolution. ([Source Code](https://github.com/LizardByte/Sunshine)) `GPL-3.0` `C++/deb/Docker`
 
 
-### Genealogy
+<a id="genealogy"></a>
+### 家谱
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Genealogy software](https://en.wikipedia.org/wiki/Genealogy_software) used to record, organize, and publish genealogical data.
 
 - [Genea.app](https://www.genea.app/) - Genealogy tool designed with privacy in mind that anyone can use to author or edit their family tree. Data is stored in the GEDCOM format and all processing is done in the browser. ([Source Code](https://github.com/genea-app/genea-app)) `MIT` `Javascript`
-- [Genealogy](https://genealogy.kreaweb.be/) - Record family members and their relationships and build a family tree. ([Demo](https://genealogy.kreaweb.be/), [Source Code](https://github.com/MGeurts/genealogy)) `MIT` `PHP`
+- [家谱](https://genealogy.kreaweb.be/) - Record family members and their relationships and build a family tree. ([Demo](https://genealogy.kreaweb.be/), [Source Code](https://github.com/MGeurts/genealogy)) `MIT` `PHP`
 - [GeneWeb](https://geneweb.tuxfamily.org/wiki/GeneWeb) - Genealogy software that can be used offline or as a Web service. ([Source Code](https://github.com/geneweb/geneweb)) `GPL-2.0` `OCaml`
 - [Gramps Web](https://www.grampsweb.org/) - Web app for collaborative genealogy, based on and interoperable with Gramps, the open source genealogy desktop application. ([Demo](https://gramps-project.github.io/gramps-web-api/), [Source Code](https://github.com/gramps-project/gramps-web-api)) `AGPL-3.0` `Docker`
 - [webtrees](https://www.webtrees.net) - Webtrees is the web's leading online collaborative genealogy application. ([Demo](https://dev.webtrees.net/demo-stable/index.php?ctype=gedcom&ged=demo), [Source Code](https://github.com/fisharebest/webtrees)) `GPL-3.0` `PHP`
 
 
-### Generative Artificial Intelligence (GenAI)
+<a id="generative-artificial-intelligence-genai"></a>
+### 生成式人工智能（GenAI）
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Generative Artificial Intelligence (GenAI)](https://en.wikipedia.org/wiki/Generative_artificial_intelligence) is a subset of [artificial intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence) that uses generative models to produce text, images, videos, or other forms of data.
 
@@ -1093,9 +1138,10 @@ _Related: [Games](#games)_
 - [Vane](https://github.com/ItzCrazyKns/Vane) - AI-powered search engine (alternative to Perplexity AI). `MIT` `Docker`
 
 
-### Groupware
+<a id="groupware"></a>
+### 群件
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Collaborative software or [groupware](https://en.wikipedia.org/wiki/Collaborative_software) is designed to help people working on a common task to attain their goals. Groupware often regroups multiple services such as file sharing, calendar/events management, appointment scheduling, address books... in a single, integrated application.
 
@@ -1116,9 +1162,10 @@ _Related: [Booking and Scheduling](#booking-and-scheduling)_
 - [Zimbra Collaboration](https://www.zimbra.com/) - Email, calendar, collaboration server with Web interface and lots of integrations. ([Source Code](https://github.com/zimbra)) `GPL-2.0/CPAL-1.0` `Java`
 
 
-### Health and Fitness
+<a id="health-and-fitness"></a>
+### 健康与健身
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Medical](https://en.wikipedia.org/wiki/Medical_software), [Health](https://en.wikipedia.org/wiki/Health_information_technology) and [Fitness](https://en.wikipedia.org/wiki/Fitness_tracker) software.
 
@@ -1131,9 +1178,10 @@ _Related: [Booking and Scheduling](#booking-and-scheduling)_
 - [Wingfit](https://wingfit.fr) - Minimalist fitness app to plan your workouts, track your personal records and leverage smartwatch data. ([Demo](https://wingfit.fr/home), [Source Code](https://github.com/itskovacs/wingfit)) `CC-BY-SA-4.0` `Python/Docker`
 
 
-### Human Resources Management (HRM)
+<a id="human-resources-management-hrm"></a>
+### 人力资源管理（HRM）
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 A [human resources management system](https://en.wikipedia.org/wiki/Human_resource_management_system) combines a number of systems and processes to ensure the easy management of [human resources](https://en.wikipedia.org/wiki/Human_resources), business processes and data.
 
@@ -1142,9 +1190,10 @@ A [human resources management system](https://en.wikipedia.org/wiki/Human_resour
 - [MintHCM](https://minthcm.org/) - Tool for Human Capital Management based on two popular, well-known business applications SugarCRM Community Edition and SuiteCRM. ([Source Code](https://github.com/minthcm/minthcm)) `AGPL-3.0` `PHP`
 
 
-### Identity Management
+<a id="identity-management"></a>
+### 身份管理
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Identity management](https://en.wikipedia.org/wiki/Identity_management) (IdM), also known as identity and access management (IAM or IdAM), is a framework of policies and technologies to ensure that the right users have the appropriate access to technology resources.
 
@@ -1152,9 +1201,10 @@ A [human resources management system](https://en.wikipedia.org/wiki/Human_resour
 
 
 
-### Internet of Things (IoT)
+<a id="internet-of-things-iot"></a>
+### 物联网（IoT）
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Internet of Things](https://en.wikipedia.org/wiki/Internet_of_things) describes physical objects with sensors, processing ability, software, and other technologies that connect and exchange data with other devices over the Internet.
 
@@ -1179,9 +1229,10 @@ A [human resources management system](https://en.wikipedia.org/wiki/Human_resour
 - [WebThings Gateway](https://webthings.io/gateway/) - WebThings is an open source implementation of the Web of Things, including the WebThings Gateway and the WebThings Framework. ([Source Code](https://github.com/WebThingsIO/gateway)) `MPL-2.0` `Nodejs`
 
 
-### Inventory Management
+<a id="inventory-management"></a>
+### 库存管理
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Inventory management software](https://en.wikipedia.org/wiki/Inventory_management_software).
 
@@ -1199,9 +1250,10 @@ _See also: [awesome-sysadmin/IT Asset Management](https://github.com/awesome-fos
 - [Spoolman](https://github.com/Donkie/Spoolman) - Keep track of your inventory of 3D-printer filament spools. `MIT` `Docker/Python`
 
 
-### Knowledge Management Tools
+<a id="knowledge-management-tools"></a>
+### 知识管理工具
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Knowledge management](https://en.wikipedia.org/wiki/Knowledge_management) is the collection of methods relating to creating, sharing, using and managing the knowledge and information.
 
@@ -1216,9 +1268,10 @@ _Related: [Note-taking & Editors](#note-taking--editors), [Wikis](#wikis), [Data
 - [TeamMapper](https://github.com/b310-digital/teammapper) - Host and create your own mindmaps. Share your mindmap sessions with your team and collaborate live on mindmaps. ([Demo](https://map.kits.blog)) `MIT` `Docker/Nodejs`
 
 
-### Learning and Courses
+<a id="learning-and-courses"></a>
+### 学习与课程
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Tools and software to help with education and learning.
 
@@ -1239,9 +1292,10 @@ Tools and software to help with education and learning.
 - [RosarioSIS](https://www.rosariosis.org/) - Student Information System for school management. Features students demographics, grades, scheduling, attendance, student billing, discipline & food service modules. ([Demo](https://www.rosariosis.org/demo/), [Source Code](https://gitlab.com/francoisjacquet/rosariosis/)) `GPL-2.0` `PHP`
 
 
-### Manufacturing
+<a id="manufacturing"></a>
+### 制造
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Software to manage [3D printers](https://en.wikipedia.org/wiki/3D_printing), [CNC machines](https://en.wikipedia.org/wiki/Numerical_control) and other physical manufacturing tools.
 
@@ -1252,9 +1306,10 @@ Software to manage [3D printers](https://en.wikipedia.org/wiki/3D_printing), [CN
 - [Octoprint](https://octoprint.org/) - Snappy web interface for controlling consumer 3D printers. ([Source Code](https://github.com/OctoPrint/OctoPrint)) `AGPL-3.0` `Docker/Python`
 
 
-### Maps and Global Positioning System (GPS)
+<a id="maps-and-global-positioning-system-gps"></a>
+### 地图与全球定位系统（GPS）
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Maps](https://en.wikipedia.org/wiki/Map), [cartography](https://en.wikipedia.org/wiki/Cartography), [GIS](https://en.wikipedia.org/wiki/Geographic_information_system) and [GPS](https://en.wikipedia.org/wiki/Global_Positioning_System) software.
 
@@ -1278,9 +1333,10 @@ _See also: [awesome-openstreetmap](https://github.com/osmlab/awesome-openstreetm
 - [wanderer](https://github.com/open-wanderer/wanderer) - Trail database where you can upload your recorded tracks or create new ones and add various metadata to build an easily searchable catalogue. ([Demo](https://demo.wanderer.to)) `AGPL-3.0` `Docker/Go/Nodejs`
 
 
-### Media Management
+<a id="media-management"></a>
+### 媒体管理
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Digital media](https://en.wikipedia.org/wiki/Digital_media) management tools and software.
 
@@ -1313,9 +1369,10 @@ _Related: [Automation](#automation), [Media Streaming](#media-streaming), [Media
 - [yt-dlp Web UI](https://github.com/marcopiovanello/yt-dlp-web-ui) - Web GUI for yt-dlp. `MPL-2.0` `Docker/Go/Nodejs`
 
 
-### Media Streaming
+<a id="media-streaming"></a>
+### 媒体流
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Streaming media](https://en.wikipedia.org/wiki/Streaming_media) is multimedia that is delivered and consumed in a continuous manner from a source, with little or no intermediate storage in network elements.
 
@@ -1325,9 +1382,10 @@ _See also: [List of streaming media systems - Wikipedia](https://en.wikipedia.or
 
 
 
-### Media Streaming - Audio Streaming
+<a id="media-streaming---audio-streaming"></a>
+### 媒体流 - 音频流
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Audio](https://en.wikipedia.org/wiki/Audio) streaming tools and software.
 
@@ -1362,9 +1420,10 @@ _Related: [Media Management](#media-management)_
 - [vod2pod-rss](https://github.com/madiele/vod2pod-rss) `⚠` - Convert YouTube and Twitch channels to podcasts, no storage required. Transcodes VoDs to MP3 192k on the fly, generates an RSS feed to use in podcast clients. `MIT` `Docker`
 
 
-### Media Streaming - Multimedia Streaming
+<a id="media-streaming---multimedia-streaming"></a>
+### 媒体流 - 多媒体流
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Multimedia](https://en.wikipedia.org/wiki/Multimedia) streaming tools and software.
 
@@ -1388,9 +1447,10 @@ _Related: [Media Streaming - Video Streaming](#media-streaming---video-streaming
 - [üWave](https://u-wave.net/) `⚠` - Self-hosted collaborative listening platform. Users take turns playing media—songs, talks, gameplay videos, or anything else—from a variety of media sources like YouTube and SoundCloud. ([Demo](https://wlk.yt/), [Source Code](https://github.com/u-wave)) `MIT` `Nodejs`
 
 
-### Media Streaming - Video Streaming
+<a id="media-streaming---video-streaming"></a>
+### 媒体流 - 视频流
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Video](https://en.wikipedia.org/wiki/Video) streaming tools and software.
 
@@ -1411,9 +1471,10 @@ _Related: [Video Surveillance](#video-surveillance), [Media Streaming - Multimed
 - [VideoLAN Client (VLC)](https://www.videolan.org/) - Cross-platform multimedia player client and server supporting most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols. ([Source Code](https://code.videolan.org/videolan/vlc)) `GPL-2.0` `C/deb`
 
 
-### Miscellaneous
+<a id="miscellaneous"></a>
+### 杂项
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Software that does not fit in another section.
 
@@ -1489,9 +1550,10 @@ Software that does not fit in another section.
 - [Zero-TOTP](https://zero-totp.com) - Complete, reliable, secure and zero-trust webapp based on zero-knowledge encryption to store your TOTP codes. ([Source Code](https://github.com/SeaweedbrainCY/zero-totp)) `GPL-3.0` `Docker`
 
 
-### Money, Budgeting & Management
+<a id="money-budgeting--management"></a>
+### 金钱、预算与管理
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Money management](https://en.wikipedia.org/wiki/Money_management) and budgeting software.
 
@@ -1536,19 +1598,21 @@ _Related: [Inventory Management](#inventory-management), [Resource Planning](#re
 - [YAFFA](https://www.yaffa.cc) - Personal finance web application, that can be used to keep track of your money, expenses, budgets, and investments. It also helps with long-term financial planning. ([Demo](https://sandbox.yaffa.cc), [Source Code](https://github.com/kantorge/yaffa)) `MIT` `PHP`
 
 
-### Monitoring & Status Pages
+<a id="monitoring--status-pages"></a>
+### 监控与状态页
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
-Software for [monitoring](https://en.wikipedia.org/wiki/Monitoring#Computing) systems, networks, applications and websites. 
+Software for [monitoring](https://en.wikipedia.org/wiki/Monitoring#Computing) systems, networks, applications and websites.
 
 **Please visit [awesome-sysadmin/Monitoring](https://github.com/awesome-foss/awesome-sysadmin#monitoring--status-pages), [awesome-sysadmin/Metrics and Metric Collection](https://github.com/awesome-foss/awesome-sysadmin#metrics--metric-collection)**
 
 
 
-### Network Utilities
+<a id="network-utilities"></a>
+### 网络工具
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Network utilities are tools and software that help manage, monitor, and troubleshoot computer networks.
 
@@ -1566,9 +1630,10 @@ _See also: [awesome-sysadmin/Monitoring](https://github.com/awesome-foss/awesome
 - [WatchYourLAN](https://github.com/aceberg/WatchYourLAN) - Lightweight network IP scanner with notifications, history, export to Grafana. `MIT` `Docker/Go/deb`
 
 
-### Note-taking & Editors
+<a id="note-taking--editors"></a>
+### 笔记与编辑器
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Note taking](https://en.wikipedia.org/wiki/Note-taking) editors.
 
@@ -1596,9 +1661,10 @@ _Related: [Wikis](#wikis)_
 - [Writing](https://josephernest.github.io/writing/) - Lightweight distraction-free text editor, in the browser (Markdown and LaTeX supported). No lag when writing. ([Source Code](https://github.com/josephernest/writing)) `MIT` `Javascript`
 
 
-### Office Suites
+<a id="office-suites"></a>
+### 办公套件
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 An [office suite](https://en.wikipedia.org/wiki/List_of_office_suites) is a collection of productivity software usually containing at least a word processor, spreadsheet and a presentation program.
 
@@ -1610,9 +1676,10 @@ An [office suite](https://en.wikipedia.org/wiki/List_of_office_suites) is a coll
 - [ONLYOFFICE](https://helpcenter.onlyoffice.com/faq/server-opensource.aspx) - Office suite that enables you to manage documents, projects, team and customer relations in one place. ([Source Code](https://github.com/ONLYOFFICE/DocumentServer)) `AGPL-3.0` `Nodejs/Docker`
 
 
-### Password Managers
+<a id="password-managers"></a>
+### 密码管理器
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 A [password manager](https://en.wikipedia.org/wiki/Password_manager) allows users to store, generate, and manage their passwords for local applications and online services.
 
@@ -1625,9 +1692,10 @@ A [password manager](https://en.wikipedia.org/wiki/Password_manager) allows user
 - [Vaultwarden](https://github.com/dani-garcia/vaultwarden) - Lightweight Bitwarden server API implementation written in Rust. `GPL-3.0` `Rust/Docker`
 
 
-### Pastebins
+<a id="pastebins"></a>
+### 粘贴板
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 A [pastebin](https://en.wikipedia.org/wiki/Pastebin) is a type of online content-hosting service used for sharing and storing code and text.
 
@@ -1652,9 +1720,10 @@ A [pastebin](https://en.wikipedia.org/wiki/Pastebin) is a type of online content
 - [Yopass](https://github.com/jhaals/yopass) - Secure sharing of secrets, passwords and files. ([Demo](https://yopass.se/)) `Apache-2.0` `Go/Docker`
 
 
-### Personal Dashboards
+<a id="personal-dashboards"></a>
+### 个人仪表盘
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Dashboards for accessing information and applications.
 
@@ -1681,9 +1750,10 @@ _Related: [Monitoring & Status Pages](#monitoring--status-pages), [Bookmarks and
 - [Your Spotify](https://github.com/Yooooomi/your_spotify) `⚠` - Allows you to record your Spotify listening activity and have statistics about them served through a Web application. `MIT` `Nodejs/Docker`
 
 
-### Photo Galleries
+<a id="photo-galleries"></a>
+### 相册
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 A [gallery](https://en.wikipedia.org/wiki/Gallery_Software) is software that helps the user publish or share photos, pictures, videos or other digital media.
 
@@ -1713,9 +1783,10 @@ _Related: [Static Site Generators](#static-site-generators), [Media Streaming - 
 - [Zenphoto](https://www.zenphoto.org/) - Open-source gallery and CMS project. ([Source Code](https://github.com/zenphoto/zenphoto)) `GPL-2.0` `PHP`
 
 
-### Polls and Events
+<a id="polls-and-events"></a>
+### 投票与活动
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Software for organising [polls](https://en.wikipedia.org/wiki/Opinion_poll) and [events](https://en.wikipedia.org/wiki/Event).
 
@@ -1741,9 +1812,10 @@ _Related: [Booking and Scheduling](#booking-and-scheduling)_
 - [Revel](https://www.letsrevel.io) `⚠` - Community-focused event management and ticketing platform. ([Demo](https://demo.letsrevel.io), [Source Code](https://github.com/letsrevel/revel-backend), [Clients](https://github.com/letsrevel)) `MIT` `Python/Docker`
 
 
-### Proxy
+<a id="proxy"></a>
+### 代理
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 A [proxy](https://en.wikipedia.org/wiki/Proxy_server) is a server application that acts as an intermediary between a client requesting a resource and the server providing that resource. This section about forward (i.e. outgoing) proxies. For reverse proxies, see the Web Server section.
 
@@ -1760,9 +1832,10 @@ _Related: [Web Servers](#web-servers)_
 - [Tinyproxy](https://tinyproxy.github.io/) - Light-weight HTTP/HTTPS proxy daemon. ([Source Code](https://github.com/tinyproxy/tinyproxy)) `GPL-2.0` `C/deb`
 
 
-### Recipe Management
+<a id="recipe-management"></a>
+### 食谱管理
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Software and tools for managing [recipes](https://en.wikipedia.org/wiki/Recipe).
 
@@ -1779,9 +1852,10 @@ Software and tools for managing [recipes](https://en.wikipedia.org/wiki/Recipe).
 - [What To Cook?](https://github.com/kassner/whattocook) - Get a recipe to cook today, based on the ingredients you have at home. `AGPL-3.0` `Docker`
 
 
-### Remote Access
+<a id="remote-access"></a>
+### 远程访问
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Remote desktop](https://en.wikipedia.org/wiki/Remote_desktop_software) and [SSH](https://en.wikipedia.org/wiki/Secure_Shell) servers and web interfaces for remote management of computer systems.
 
@@ -1796,9 +1870,10 @@ Software and tools for managing [recipes](https://en.wikipedia.org/wiki/Recipe).
 - [Warpgate](https://github.com/warp-tech/warpgate) - Smart SSH and HTTPS bastion that works with any SSH client. `Apache-2.0` `Rust/Docker`
 
 
-### Resource Planning
+<a id="resource-planning"></a>
+### 资源规划
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Software and tools to help with [resource and supply planning](https://en.wikipedia.org/wiki/Resource_planning), including [enterprise resource and supply planning (ERP)](https://en.wikipedia.org/wiki/Enterprise_resource_planning).
 
@@ -1814,9 +1889,10 @@ _Related: [Money, Budgeting & Management](#money-budgeting--management), [Invent
 - [Tryton](https://www.tryton.org/) - Free open source business solution. ([Demo](https://www.tryton.org/demo), [Source Code](https://foss.heptapod.net/tryton/tryton)) `GPL-3.0` `Python`
 
 
-### Search Engines
+<a id="search-engines"></a>
+### 搜索引擎
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 A [search engine](https://en.wikipedia.org/wiki/Search_engine_(computing)) is an [information retrieval system](https://en.wikipedia.org/wiki/Information_retrieval) designed to help find information stored on a computer system. This includes [Web search engines](https://en.wikipedia.org/wiki/Web_search_engine).
 
@@ -1837,9 +1913,10 @@ A [search engine](https://en.wikipedia.org/wiki/Search_engine_(computing)) is an
 - [ZincSearch](https://zincsearch.com) - Search engine that requires minimal resources (alternative to Elasticsearch). ([Demo](https://github.com/zinclabs/zinc#playground-server), [Source Code](https://github.com/zincsearch/zincsearch)) `Apache-2.0` `Go/Docker/K8S`
 
 
-### Self-hosting Solutions
+<a id="self-hosting-solutions"></a>
+### 自托管解决方案
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Software for easy installation, management and configuration of self-hosted services and applications.
 
@@ -1866,9 +1943,10 @@ Software for easy installation, management and configuration of self-hosted serv
 - [YunoHost](https://yunohost.org/) - Server operating system aiming to make self-hosting accessible to everyone. ([Demo](https://yunohost.org/#/try), [Source Code](https://github.com/YunoHost)) `AGPL-3.0` `Python/Shell`
 
 
-### Software Development
+<a id="software-development"></a>
+### 软件开发
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Software development](https://en.wikipedia.org/wiki/Software_development) is the process of conceiving, specifying, designing, programming, documenting, testing, and bug fixing involved in creating and maintaining applications, frameworks, or other software components.
 
@@ -1876,11 +1954,12 @@ Software for easy installation, management and configuration of self-hosted serv
 
 
 
-### Software Development - API Management
+<a id="software-development---api-management"></a>
+### 软件开发 - API 管理
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
-[API management](https://en.wikipedia.org/wiki/API_management) is the process of creating and publishing [application programming interfaces (APIs)](https://en.wikipedia.org/wiki/API), enforcing their usage policies, controlling access, nurturing the subscriber community, collecting and analyzing usage statistics, and reporting on performance. 
+[API management](https://en.wikipedia.org/wiki/API_management) is the process of creating and publishing [application programming interfaces (APIs)](https://en.wikipedia.org/wiki/API), enforcing their usage policies, controlling access, nurturing the subscriber community, collecting and analyzing usage statistics, and reporting on performance.
 
 - [Aastro](https://starwalkn.github.io/aastro-docs) - Extensible API Gateway written in Go. ([Source Code](https://github.com/starwalkn/aastro)) `Apache-2.0` `Go/Docker`
 - [DreamFactory](https://www.dreamfactory.com/) - Turns any SQL/NoSQL/Structured data into Restful API. ([Source Code](https://github.com/dreamfactorysoftware/dreamfactory)) `Apache-2.0` `PHP/Docker/K8S`
@@ -1897,9 +1976,10 @@ Software for easy installation, management and configuration of self-hosted serv
 - [Tyk](https://tyk.io) - Fast and scalable open source API Gateway. Out of the box, Tyk offers an API Management Platform with an API Gateway, API Analytics, Developer Portal and API Management Dashboard. ([Source Code](https://github.com/TykTechnologies/tyk)) `MPL-2.0` `Go/Docker/K8S`
 
 
-### Software Development - Continuous Integration & Deployment
+<a id="software-development---continuous-integration--deployment"></a>
+### 软件开发 - 持续集成与部署
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) and [Continuous deployment](https://en.wikipedia.org/wiki/Continuous_deployment) software and tools.
 
@@ -1909,9 +1989,10 @@ _Related: [Automation](#automation)_
 
 
 
-### Software Development - FaaS & Serverless
+<a id="software-development---faas--serverless"></a>
+### 软件开发 - FaaS 与 Serverless
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Serverless computing](https://en.wikipedia.org/wiki/Serverless_computing), [Function as a Service (FaaS)](https://en.wikipedia.org/wiki/Function_as_a_service) and [Platform as a Service (Paas)](https://en.wikipedia.org/wiki/Platform_as_a_service) management software.
 
@@ -1919,9 +2000,10 @@ _Related: [Automation](#automation)_
 
 
 
-### Software Development - Feature Toggle
+<a id="software-development---feature-toggle"></a>
+### 软件开发 - 功能开关
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 A [feature toggle](https://en.wikipedia.org/wiki/Feature_toggle) in software development provides an alternative to maintaining multiple feature branches in source code.
 
@@ -1933,9 +2015,10 @@ _Related: [Software Development - IDE & Tools](#software-development---ide--tool
 - [GO Feature Flag](https://gofeatureflag.org) - Simple, complete, and lightweight feature flag solution (alternative to LaunchDarkly). ([Source Code](https://github.com/thomaspoignant/go-feature-flag)) `MIT` `Go`
 
 
-### Software Development - IDE & Tools
+<a id="software-development---ide--tools"></a>
+### 软件开发 - IDE 与工具
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 An [integrated development environment (IDE)](https://en.wikipedia.org/wiki/Integrated_development_environment) is a software application that provides comprehensive facilities to computer programmers for software development.
 
@@ -1954,9 +2037,10 @@ _Related: [Software Development - Low Code](#software-development---low-code)_
 - [RStudio Server](https://www.rstudio.com/products/rstudio/#Server) - Web browser based IDE for R. ([Source Code](https://github.com/rstudio/rstudio)) `AGPL-3.0` `Java/C++`
 
 
-### Software Development - Localization
+<a id="software-development---localization"></a>
+### 软件开发 - 本地化
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Localization](https://en.wikipedia.org/wiki/Internationalization_and_localization) is the process of adapting code and software to other languages.
 
@@ -1966,9 +2050,10 @@ _Related: [Software Development - Low Code](#software-development---low-code)_
 - [Weblate](https://weblate.org) - Web-based translation tool with tight version control integration. ([Source Code](https://github.com/WeblateOrg/weblate)) `GPL-3.0` `Python/Docker/K8S`
 
 
-### Software Development - Low Code
+<a id="software-development---low-code"></a>
+### 软件开发 - 低代码
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 A [low-code](https://en.wikipedia.org/wiki/Low-code_development_platform) development platform (LCDP) provides a development environment used to create application software through a graphical user interface.
 
@@ -1986,9 +2071,10 @@ _Related: [Software Development - IDE & Tools](#software-development---ide--tool
 - [TrailBase](https://trailbase.io/) - Open, sub-millisecond, single-executable FireBase alternative with type-safe REST & realtime APIs, built-in JS/TS runtime, auth & admin UI. ([Demo](https://demo.trailbase.io), [Source Code](https://github.com/trailbaseio/trailbase)) `OSL-3.0` `Rust/Docker`
 
 
-### Software Development - Project Management
+<a id="software-development---project-management"></a>
+### 软件开发 - 项目管理
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Tools and software for [software project management](https://en.wikipedia.org/wiki/Software_project_management).
 
@@ -2032,9 +2118,10 @@ _Related: [Ticketing](#ticketing), [Task Management & To-do Lists](#task-managem
 - [ZenTao](https://www.zentao.pm/) - An agile(scrum) project management system/tool. ([Source Code](https://github.com/easysoft/zentaopms)) `AGPL-3.0` `PHP`
 
 
-### Software Development - Testing
+<a id="software-development---testing"></a>
+### 软件开发 - 测试
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Tools and software for [software testing](https://en.wikipedia.org/wiki/Software_testing).
 
@@ -2043,11 +2130,12 @@ Tools and software for [software testing](https://en.wikipedia.org/wiki/Software
 - [WebHook Tester](https://github.com/tarampampam/webhook-tester) - Powerful tool for testing WebHooks and more. `MIT` `Docker/Go/deb/K8S`
 
 
-### Static Site Generators
+<a id="static-site-generators"></a>
+### 静态站点生成器
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
-[Static site generators](https://en.wikipedia.org/wiki/Web_template_system#Static_site_generators) generate full static HTML websites based on raw data, plain text files and a set of templates. 
+[Static site generators](https://en.wikipedia.org/wiki/Web_template_system#Static_site_generators) generate full static HTML websites based on raw data, plain text files and a set of templates.
 
 **Please visit [staticsitegenerators.bevry.me](https://staticsitegenerators.bevry.me), [staticgen.com](https://www.staticgen.com)**
 
@@ -2055,9 +2143,10 @@ _Related: [Blogging Platforms](#blogging-platforms), [Photo Galleries](#photo-ga
 
 
 
-### Task Management & To-do Lists
+<a id="task-management--to-do-lists"></a>
+### 任务管理与待办列表
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Task management](https://en.wikipedia.org/wiki/Task_management#Task_management_software) software.
 
@@ -2083,9 +2172,10 @@ _Related: [Software Development - Project Management](#software-development---pr
 - [Wekan](https://wekan.github.io/) - Open-source Trello-like kanban. ([Source Code](https://github.com/wekan/wekan)) `MIT` `Nodejs`
 
 
-### Ticketing
+<a id="ticketing"></a>
+### 工单
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Helpdesk](https://en.wikipedia.org/wiki/Help_desk_software), [bug](https://en.wikipedia.org/wiki/Bug_tracking_system) and [issue](https://en.wikipedia.org/wiki/Issue_tracking_system) tracking software to help the tracking of user requests, bugs and missing features.
 
@@ -2104,9 +2194,10 @@ _Related: [Task Management & To-do Lists](#task-management--to-do-lists), [Softw
 - [Zammad](https://zammad.org/) - Easy to use but powerful open-source support and ticketing system. ([Source Code](https://github.com/zammad/zammad)) `AGPL-3.0` `Ruby/deb`
 
 
-### Time Tracking
+<a id="time-tracking"></a>
+### 时间跟踪
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [Time-tracking software](https://en.wikipedia.org/wiki/Time-tracking_software) is a category of computer software that allows its users to record time spent on tasks or projects.
 
@@ -2121,9 +2212,10 @@ _Related: [Task Management & To-do Lists](#task-management--to-do-lists), [Softw
 - [Ziit](https://ziit.app) - The Swiss army knife of code time tracking (alternative to WakaTime). ([Source Code](https://github.com/0pandadev/ziit)) `AGPL-3.0` `Docker`
 
 
-### URL Shorteners
+<a id="url-shorteners"></a>
+### URL 缩短器
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 [URL shortening](https://en.wikipedia.org/wiki/URL_shortening) is the action of shortening a [URL](https://en.wikipedia.org/wiki/Uniform_Resource_Locator) to make it substantially shorter and still direct to the required page. Before hosting one, please see [disadvantages](https://en.wikipedia.org/wiki/URL_shortening#Disadvantages) of URL shorteners.
 
@@ -2138,9 +2230,10 @@ _Related: [Task Management & To-do Lists](#task-management--to-do-lists), [Softw
 - [YOURLS](https://yourls.org/) - YOURLS is a set of PHP scripts that will allow you to run Your Own URL Shortener. Features include password protection, URL customization, bookmarklets, statistics, API, plugins, jsonp. ([Source Code](https://github.com/YOURLS/YOURLS)) `MIT` `PHP`
 
 
-### Video Surveillance
+<a id="video-surveillance"></a>
+### 视频监控
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Video surveillance, also known as [Closed-circuit television (CCTV)](https://en.wikipedia.org/wiki/Closed-circuit_television), is the use of video cameras for surveillance in areas that require additional security or ongoing monitoring.
 
@@ -2156,9 +2249,10 @@ _Related: [Media Streaming - Video Streaming](#media-streaming---video-streaming
 - [Zoneminder](https://www.zoneminder.com/) - Closed-circuit television (CCTV) software application which supports IP, USB and Analog cameras. ([Source Code](https://github.com/ZoneMinder/ZoneMinder)) `GPL-2.0` `PHP/deb`
 
 
+<a id="vpn"></a>
 ### VPN
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 A [virtual private network (VPN)](https://en.wikipedia.org/wiki/Virtual_private_network) extends a private network across a public network and enables users to send and receive data across shared or public networks as if their computing devices were directly connected to the private network.
 
@@ -2166,9 +2260,10 @@ A [virtual private network (VPN)](https://en.wikipedia.org/wiki/Virtual_private_
 
 
 
-### Web Servers
+<a id="web-servers"></a>
+### Web 服务器
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 Web Servers and Reverse Proxies. A [web server](https://en.wikipedia.org/wiki/Web_server) is a piece of software and underlying hardware that accepts requests via [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) (the network protocol created to distribute web content) or its secure variant [HTTPS](https://en.wikipedia.org/wiki/HTTPS). A [Reverse Proxy](https://en.wikipedia.org/wiki/Reverse_proxy) is a proxy server that appears to any client to be an ordinary web server, but in reality merely acts as an intermediary that forwards requests to one or more ordinary web servers.
 
@@ -2196,9 +2291,10 @@ _Related: [Proxy](#proxy)_
 - [Zoraxy](https://zoraxy.aroz.org/) - General purpose HTTP reverse proxy and forwarding tool. ([Source Code](https://github.com/tobychui/zoraxy)) `AGPL-3.0` `Go/Docker`
 
 
-### Wikis
+<a id="wikis"></a>
+### Wiki
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 A [wiki](https://en.wikipedia.org/wiki/Wiki) is a publication collaboratively edited and managed by its own audience directly using a web browser.
 
@@ -2236,9 +2332,11 @@ _See also: [Wikimatrix](https://www.wikimatrix.org/), [List of wiki software - W
 
 --------------------
 
-## List of Licenses
+<a id="list-of-licenses"></a>
+<a id="license"></a>
+## 许可证列表
 
-**[`^        back to top        ^`](#awesome-selfhosted)**
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
 - `0BSD` - [BSD Zero-Clause Licence](https://spdx.org/licenses/0BSD.html)
 - `AAL` - [Attribution Assurance License](https://spdx.org/licenses/AAL.html)
@@ -2284,32 +2382,35 @@ _See also: [Wikimatrix](https://www.wikimatrix.org/), [List of wiki software - W
 
 --------------------
 
-## Anti-features
+<a id="anti-features"></a>
+## 反功能
 
-- `⚠ ` - Depends on a proprietary service outside the user's control
-
---------------------
-
-## External Links
-
-**[`^        back to top        ^`](#awesome-selfhosted)**
-
-- Alternative frontends/portals to discover/filter awesome-selfhosted apps: [awweso.me](https://awweso.me/), [awesome-web.theravenhub](https://awesome-web.theravenhub.com/browse.html), [awesomehub.web.app](https://awesomehub.js.org/list/selfhosted)
-- [Awesome Sysadmin](https://github.com/awesome-foss/awesome-sysadmin) - Curated list of amazingly awesome open source sysadmin resources.
-- Lists of software aimed at privacy and decentralization in some form: [PRISM Break](https://prism-break.org/en/), [privacytools.io](https://www.privacytools.io/), [Alternative Internet](https://redecentralize.github.io/alternative-internet/), [Libre Projects](https://libreprojects.net/), [Easy Indie App](https://easyindie.app)
-- Other Awesome lists: [Awesome Big Data](https://github.com/0xnr/awesome-bigdata), [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
-- Dynamic Domain Name services: [Afraid.org](https://freedns.afraid.org/domain/registry/), [Pagekite](https://pagekite.net/)
-- Communities/forums: [/c/selfhosted on lemmy.world](https://lemmy.world/c/selfhosted), [/c/selfhost on lemmy.ml](https://lemmy.ml/c/selfhost), [/r/selfhosted on reddit](https://old.reddit.com/r/selfhosted/), [/r/selfhosted Matrix Channel](https://matrix.to/#/#selfhosted:selfhosted.chat), [/r/homelab on reddit](https://old.reddit.com/r/homelab/), [IndieWeb](https://indieweb.org/)
-- [theme.park](https://theme-park.dev/) - A collection of themes/skins for 50 selfhosted apps! ([Source Code](https://github.com/GilbN/theme.park/)) `MIT` `CSS`
+- `⚠ ` - 依赖用户无法控制的专有服务
 
 --------------------
 
-## Contributing
+<a id="external-links"></a>
+## 外部链接
 
-Contributing guidelines can be found [here](https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/CONTRIBUTING.md).
+**[`^        返回顶部        ^`](#awesome-selfhosted)**
 
-## License
+- 用于发现/筛选 awesome-selfhosted 应用的替代前端/门户： [awweso.me](https://awweso.me/), [awesome-web.theravenhub](https://awesome-web.theravenhub.com/browse.html), [awesomehub.web.app](https://awesomehub.js.org/list/selfhosted)
+- [Awesome Sysadmin](https://github.com/awesome-foss/awesome-sysadmin) - 精选的优秀开源系统管理资源列表。
+- 以隐私和某种形式的去中心化为目标的软件列表： [PRISM Break](https://prism-break.org/en/), [privacytools.io](https://www.privacytools.io/), [Alternative Internet](https://redecentralize.github.io/alternative-internet/), [Libre Projects](https://libreprojects.net/), [Easy Indie App](https://easyindie.app)
+- 其他 Awesome 列表： [Awesome Big Data](https://github.com/0xnr/awesome-bigdata), [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
+- 动态域名服务： [Afraid.org](https://freedns.afraid.org/domain/registry/), [Pagekite](https://pagekite.net/)
+- 社区/论坛： [/c/selfhosted on lemmy.world](https://lemmy.world/c/selfhosted), [/c/selfhost on lemmy.ml](https://lemmy.ml/c/selfhost), [/r/selfhosted on reddit](https://old.reddit.com/r/selfhosted/), [/r/selfhosted Matrix Channel](https://matrix.to/#/#selfhosted:selfhosted.chat), [/r/homelab on reddit](https://old.reddit.com/r/homelab/), [IndieWeb](https://indieweb.org/)
+- [theme.park](https://theme-park.dev/) - 面向 50 个自托管应用的主题/皮肤集合！ ([Source Code](https://github.com/GilbN/theme.park/)) `MIT` `CSS`
 
-This list is under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://github.com/awesome-selfhosted/awesome-selfhosted/blob/master/LICENSE) License.
-Terms of the license are summarized [here](https://creativecommons.org/licenses/by-sa/3.0/).  
-The list of authors can be found in the [AUTHORS](https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/AUTHORS) file.
+--------------------
+
+<a id="contributing"></a>
+## 贡献
+
+贡献指南可在[这里](https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/CONTRIBUTING.md)找到。
+
+## 许可
+
+此列表采用 [Creative Commons Attribution-ShareAlike 3.0 Unported](https://github.com/awesome-selfhosted/awesome-selfhosted/blob/master/LICENSE) 许可证。
+许可证条款摘要见[这里](https://creativecommons.org/licenses/by-sa/3.0/)。
+作者列表可在 [AUTHORS](https://github.com/awesome-selfhosted/awesome-selfhosted-data/blob/master/AUTHORS) 文件中找到。
